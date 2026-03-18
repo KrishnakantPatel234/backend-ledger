@@ -14,6 +14,10 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
+app.get("/" , (req , res) => {
+    res.send("Bank transaction backend is up and running");
+})
+
 /**
  * - Use Routes
  */
